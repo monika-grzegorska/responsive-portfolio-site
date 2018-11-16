@@ -1,0 +1,79 @@
+.welcome {
+    background: url(img/background.jpg) fixed center no-repeat;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.site-navigation ul {
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.site-navigation li:hover {
+    color: #b4b4b4;
+    text-decoration: underline;
+}
+
+#active {
+    color: #b4b4b4;
+}
+
+hr {
+    width: 30%;
+}
+
+.site-name {
+    opacity: .8;
+}
+
+.img-thumbnail {
+    opacity: .5;
+}
+
+#projects {
+    background: url(img/project-background.jpg) fixed center no-repeat;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+#about {
+    background: url(img/about-background.jpg) fixed center no-repeat;
+    background-size: cover;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+    .card-body h6 {
+        background-color: #EBE7E4;
+        color: #555454;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body a {
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        width: 60%;
+    }
+
+        .navbar-brand p {
+            font-size: 10px;
+        }
+
+    .navbar-toggler-icon {
+        width: 10%;
+    }
+
+    .card-body a {
+        font-size: 8px;
+    }
+}

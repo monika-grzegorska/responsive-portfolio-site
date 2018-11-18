@@ -1,0 +1,21 @@
+﻿.navbar-toggler {
+    width:8%;
+}
+.navbar-nav{
+    width: 30%;
+}
+.site-navigation ul {
+    list-style-type: none;
+    padding: 5px;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.site-navigation li:hover {
+    color: #b4b4b4;
+    text-decoration: underline;
+}
+
+#active {
+    color: #b4b4b4;
+}

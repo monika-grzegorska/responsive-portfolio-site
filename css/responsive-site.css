@@ -1,0 +1,32 @@
+﻿@media (max-width: 992px) {
+    .about-card h6 {
+        background-color: #EBE7E4;
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    #about {
+        background: url(../img/background-small.jpg) fixed center no-repeat;
+        background-size: cover;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        width: 60%;
+    }
+
+        .navbar-brand p {
+            font-size: 15px;
+        }
+
+    .navbar-toggler-icon {
+        width: 10%;
+    }
+
+    .about-card a {
+        font-size: 12px;
+    }
+}

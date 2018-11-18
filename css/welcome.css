@@ -1,0 +1,10 @@
+﻿.welcome {
+    background: url(../img/background.jpg) fixed center no-repeat;
+    background-size: cover;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.site-name {
+    opacity: .8;
+}

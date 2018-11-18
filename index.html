@@ -3,12 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Portfolio Site</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/responsive-site.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="menu.js"></script>
+    <script src="js/menu.js"></script>
     <!--Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -22,7 +28,9 @@
     <link rel="Shortcut icon" href="img/logo.png" />
 </head>
 <body>
-    <main class="container-fluid">
+    <main class="container-fluid p-0">
+
+
         <!--NAVIGATION-->
         <div class="header " id="top">
             <nav class="navbar navbar-expand-lg navbar-light sticky-top">
@@ -33,9 +41,9 @@
                         <p class="h6">Front-end Developer</p>
                     </div>
                 </a>
-                <button class="navbar-toggler pull-right " type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <div class="navbar-toggler bg-white my-4 mr-1 fixed-top ml-auto border-0 " data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </div>
                 <div class="collapse navbar-collapse site-navigation mt-0 fixed-top" id="navbarResponsive">
                     <ul class=" navbar-nav ml-auto d-flex d-inline-block text-center justify-content-end mb-3" id="menu">
                         <li class="p-2 current "><a class=" d-block text-info btn" id="active" href="#top">HOME</a></li>
@@ -47,6 +55,8 @@
             </nav>
         </div>
         <hr class="bg-info" />
+
+
         <!--WELCOME-->
         <div class="row welcome text-center d-block">
             <div class="col-12">
@@ -56,8 +66,9 @@
                 <p class="lead"> My name is Monika, and this is my portfolio site</p>
             </div>
         </div>
-        <!--</div>-->
         <hr class="bg-info" />
+
+
         <!--ABOUT-->
         <h3 class="col-12 bg-white text-info text-center">ABOUT ME</h3>
         <hr class="bg-info" />
@@ -66,27 +77,29 @@
                 <div class="card-body about-card">
                     <img class="card-img-top mx-auto d-block" src="img/ProfilePicture.png" title="My picture" alt="grzegorska.pro" style="width: 50%; margin:auto">
                     <br />
-                    <h6 class="card-text text-center bg-muted text-info font-weight-normal">
+                    <p class=" lead text-center">
                         Even though I am only starting my career in I.T. <br />
                         I have some engineering background I gathered during my work in <br />
                         Germany - where on daily basis I have been working with AutoCAD. <br />
                         For the past 6 months I have been building up my skills by practicing <br />
                         coding skills with the help of befriended .NET specialist who has  <br />
                         explained to me what I should know to be useful/successful in current software market.
-                    </h6>
-                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-4 btn btn-light text-info mx-auto d-block">My LinkedIn Profile</a>
+                    </p>
+                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-4 btn btn-info text-light mx-auto d-block">My LinkedIn Profile</a>
                 </div>
             </div>
         </div>
         <hr class="bg-info" />
+
+
         <!--PROJECTS-->
         <!--TWO COLUMNS SECTION-->
         <h3 class="col-12 bg-white text-info text-center">PROJECTS</h3>
         <hr class="bg-info" />
-        <div id="projects">
+        <div  id="projects">
             <div class="row padding">
                 <div class="col-md-12 col-lg-6">
-                    <div class="card bg-transparent mx-auto d-block border-1 border-info">
+                    <div class="card bg-transparent mx-auto d-block border-0">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">happy2eat</h5>
                             <img class="card-img-top mx-auto d-block" src="img/happy2eatlogo.png" alt="happy2eatlogo" style="width: 50%">
@@ -99,7 +112,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class=" card bg-transparent mx-auto d-block border-1 border-info">
+                    <div class=" card bg-transparent mx-auto d-block border-0">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">portfolio</h5>
                             <img class="card-img-top mx-auto d-block" src="img/portfoliologo.png" alt="portfolio logo" style="width: 40%">
@@ -117,7 +130,7 @@
             <!--NEXT TWO COLUMNS-->
             <div class="row padding">
                 <div class="col-md-12 col-lg-6">
-                    <div class="card bg-transparent mx-auto d-block border-1 border-info ">
+                    <div class="card bg-transparent mx-auto d-block border-0 ">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">under construction</h5>
                             <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
@@ -129,7 +142,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="card bg-transparent mx-auto d-block border-1 border-info ">
+                    <div class="card bg-transparent mx-auto d-block border-0 ">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">under construction</h5>
                             <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
@@ -143,6 +156,8 @@
             </div>
         </div>
         <hr class="bg-info" />
+
+
         <!--CONTACT-->
         <div id="contact">
             <h3 class="col-12 bg-white text-info text-center">CONTACT</h3>
@@ -182,7 +197,9 @@
                     </form>
                 </div>
             </div>
-            <!--CONNECT-->
+
+
+            <!--CONTACT CONNECT-->
                 <div class="col-12 social fa-3x padding bg-white text-center">
                     <a href="https://github.com/monika-grzegorska"><i class="fab text-info fa-github-square"></i></a>
                     <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab text-info fa-linkedin"></i></a>

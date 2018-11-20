@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 hr {
     width: 30%;
 }

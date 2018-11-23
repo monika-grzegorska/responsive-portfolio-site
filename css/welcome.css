@@ -4,6 +4,14 @@
     padding-top: 15%;
     padding-bottom: 15%;
 }
+/*.dot {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background-color: #00FF00;
+    border-radius: 20px;
+    z-index: 2;
+}*/
 
 .site-name {
     opacity: .8;

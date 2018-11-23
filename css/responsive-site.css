@@ -15,6 +15,10 @@
 
 
 @media (max-width: 576px) {
+    .main-class h3 {
+        font-size: 20px;
+    }
+
     .navbar-brand {
         width: 60%;
     }
@@ -23,15 +27,28 @@
             font-size: 15px;
         }
 
-    .navbar-nav {
-        width:40%;
-    }
-
     .navbar-toggler-icon {
         width: 10%;
     }
 
+    .site-name p {
+        font-size: 40px;
+    }
+
+    .about-card p {
+        font-size: 90%;
+    }
+
     .about-card a {
         font-size: 12px;
+        width: fit-content;
+    }
+
+    .projects a {
+        width: fit-content;
+    }
+
+    .button-send {
+        width: fit-content;
     }
 }

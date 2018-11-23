@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
     <script src="js/main.js"></script>
     <!--Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -28,7 +29,7 @@
     <link rel="Shortcut icon" href="img/logo.png" />
 </head>
 <body>
-    <main class="container-fluid p-0">
+    <main class="container-fluid p-0 main-class">
 
 
         <!--NAVIGATION-->
@@ -58,11 +59,11 @@
 
 
         <!--WELCOME-->
-        <div class="row welcome text-center d-block">
-            <div class="col-12">
-                <p class="col-lg-6 display-1 text-light card bg-info  mx-auto d-block site-name">Welcome</p>
+        <div class="row welcome text-center d-block" id="welcome">
+            <div class="col-12 site-name p-0">
+                <p class="col-lg-12 col-sm-12 display-1 text-light p-0 card bg-info  mx-auto d-block">Welcome</p>
             </div>
-            <div class="col-12">
+            <div class="col-lg-12">
                 <p class="lead"> My name is Monika, and this is my portfolio site</p>
             </div>
         </div>
@@ -72,20 +73,20 @@
         <!--ABOUT-->
         <h3 class="col-12 bg-white text-info text-center">ABOUT ME</h3>
         <hr class="bg-info" />
-        <div id="about">
+        <div class="row  d-block" id="about">
             <div class="col-lg-6 card bg-transparent border-0">
                 <div class="card-body about-card">
                     <img class="card-img-top mx-auto d-block" src="img/ProfilePicture.png" title="My picture" alt="grzegorska.pro" style="width: 50%; margin:auto">
                     <br />
                     <p class=" lead text-center">
-                        Even though I am only starting my career in I.T. <br />
-                        I have some engineering background I gathered during my work in <br />
-                        Germany - where on daily basis I have been working with AutoCAD. <br />
-                        For the past 6 months I have been building up my skills by practicing <br />
-                        coding skills with the help of befriended .NET specialist who has  <br />
+                        Even though I am only starting my career in I.T. 
+                        I have some engineering background I gathered during my work in 
+                        Germany - where on daily basis I have been working with AutoCAD. 
+                        For the past 6 months I have been building up my skills by practicing 
+                        coding skills with the help of befriended .NET specialist who has  
                         explained to me what I should know to be useful/successful in current software market.
                     </p>
-                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-4 btn btn-info text-light mx-auto d-block">My LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-lg-4 col-sm-4 btn btn-info text-light mx-auto d-block">My LinkedIn Profile</a>
                 </div>
             </div>
         </div>
@@ -96,7 +97,7 @@
         <!--TWO COLUMNS SECTION-->
         <h3 class="col-12 bg-white text-info text-center">PROJECTS</h3>
         <hr class="bg-info" />
-        <div id="projects">
+        <div class="row  d-block projects" id="projects">
             <div class="row padding">
                 <div class="col-md-12 col-lg-6">
                     <div class="card bg-transparent mx-auto d-block border-0">
@@ -107,7 +108,7 @@
                             <h6 class="card-text text-center text-light font-weight-normal">
                                 My first project
                             </h6>
-                            <a href="https://github.com/monika-grzegorska/react-app-one" class="col-4 btn btn-info mx-auto d-block">Github</a>
+                            <a href="https://github.com/monika-grzegorska/react-app-one" class="col-lg-4 col-sm-2 btn btn-info mx-auto d-block">Github</a>
                         </div>
                     </div>
                 </div>
@@ -118,11 +119,11 @@
                             <img class="card-img-top mx-auto d-block" src="img/portfoliologo.png" alt="portfolio logo" style="width: 40%">
                             <br />
                             <h6 class="card-text text-center  text-light font-weight-normal">
-                                I started this site because of my Udacity scholarship. <br />
+                                I started this site because of my Udacity scholarship. 
                                 Few days ago I changed it all, because I wanted to develope
                                 my Bootstrap 4 skills.
                             </h6>
-                            <a href="https://github.com/monika-grzegorska/portfolio-website" class=" col-4 btn btn-info mx-auto d-block">Github</a>
+                            <a href="https://github.com/monika-grzegorska/portfolio-website" class=" col-lg-4 col-sm-2 btn btn-info mx-auto d-block">Github</a>
                         </div>
                     </div>
                 </div>
@@ -159,56 +160,58 @@
 
 
         <!--CONTACT-->
-        <div id="contact">
-            <h3 class="col-12 bg-white text-info text-center">CONTACT</h3>
-            <hr class="bg-info" />
-            <div id="contact">
-                <div class="card bg-info col-lg-6 col-md-10 border-0 d-block mx-auto">
-                    <form role="form" method="post" id="reused_form" class="form-horizontal" action="mailto:grzegorska.monika.agata@gmail.com">
-                        <fieldset>
-                            <!-- Text input-->
-                            <div class="form-row d-flex justify-content-center">
-                                <div class="form-group col-lg-4 col-md-4">
-                                    <label for="field-name" data-error="Please write Your name">Name:</label>
-                                    <input class="form-control" type="text" id="name" name="name" placeholder="Enter Your Name" required>
-                                </div>
+        <h3 class="col-12 bg-white text-info text-center">CONTACT</h3>
+        <hr class="bg-info" />
+        <div class="row  d-block contact" id="contact">
+            <div class="card bg-info col-lg-6 col-md-10 border-0 d-block mx-auto">
+                <form role="form" method="post" id="reused_form" class="form-horizontal form-content" action="mailto:grzegorska.monika.agata@gmail.com">
+                    <fieldset>
+                        <!-- Text input-->
+                        <div class="form-row d-flex justify-content-center mx-auto">
+                            <div class="form-group col-lg-4 col-md-4">
+                                <label for="field-name" data-error="Please write Your name">Name:</label>
+                                <input class="form-control text-center" type="text" id="name" name="name" placeholder="Enter Your Name" required>
                             </div>
-                            <!-- Text input-->
-                            <div class="form-row d-flex justify-content-center">
-                                <div class="form-group col-lg-4 col-md-4">
-                                    <label for="form-email" data-error="Please write Your email">E-mail:</label>
-                                    <input class="form-control" type="email" id="email" name="email" value="email@example.com" required>
-                                </div>
+                        </div>
+                        <!-- Text input-->
+                        <div class="form-row d-flex justify-content-center mx-auto">
+                            <div class="form-group col-lg-4 col-md-4">
+                                <label for="form-email" data-error="Please write Your email">E-mail:</label>
+                                <input class="form-control text-center" type="email" id="email" name="email" value="email@example.com" required>
                             </div>
-                            <!-- Textarea -->
-                            <div class="form-row d-flex justify-content-center">
-                                <div class="form-group col-lg-4 col-md-4">
-                                    <label for="form-text">Your message:</label>
-                                    <textarea class="form-control" id="textarea" name="textarea" maxlength="6000" rows="7"></textarea>
-                                </div>
+                        </div>
+                        <!-- Textarea -->
+                        <div class="form-row d-flex justify-content-center mx-auto">
+                            <div class="form-group col-lg-4 col-md-4">
+                                <label for="form-text">Your message:</label>
+                                <textarea class="form-control" id="textarea" name="textarea" maxlength="6000" rows="7"></textarea>
                             </div>
-                            <!-- Button -->
-                            <div class="form-row d-flex justify-content-center">
-                                <div class="form-group col-lg-4 col-md-2">
-                                    <button class="btn btn-sm btn-light text-info btn-block" type="submit">Send</button>
-                                </div>
+                        </div>
+                        <!-- Button -->
+                        <div class="form-row d-flex justify-content-center button-send mx-auto">
+                            <div class="form-group col-lg-2 col-sm-2">
+                                <button class="btn btn-sm btn-light text-muted mx-auto " type="submit">Send</button>
                             </div>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-
-
-            <!--CONTACT CONNECT-->
-            <div class="col-12 social fa-3x padding bg-white text-center">
-                <a href="https://github.com/monika-grzegorska"><i class="fab text-info fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab text-info fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/monika.grzegorska.10"><i class="fab text-info fa-facebook"></i></a>
-                <a href="https://www.instagram.com/m.grzeggi/"><i class="fab text-info fa-instagram"></i></a>
-                <a href="mailto:grzegorska.monika.agata@gmail.com"><i class="far text-info fa-envelope"></i></a>
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
-        <h6 class="card-body bg-light text-center">Monika Grzegórska &#169 2018</h6>
+
+
+        <!--CONTACT CONNECT-->
+        <div class="col-12 social fa-3x padding bg-white text-center">
+            <a href="https://github.com/monika-grzegorska"><i class="fab text-info fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab text-info fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/monika.grzegorska.10"><i class="fab text-info fa-facebook"></i></a>
+            <a href="https://www.instagram.com/m.grzeggi/"><i class="fab text-info fa-instagram"></i></a>
+            <a href="mailto:grzegorska.monika.agata@gmail.com"><i class="far text-info fa-envelope"></i></a>
+        </div>
+
+        <!--SIGNATURE-->
+        <div class="col-lg-12 col-sm-12 bg-light p-0">
+            <h6 class="card-body text-center">Monika Grzegórska &#169 2018</h6>
+        </div>
     </main>
 </body>
 </html>

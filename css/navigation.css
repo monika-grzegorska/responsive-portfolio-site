@@ -24,3 +24,13 @@
 #active {
     color: #b4b4b4;
 }
+
+.top {
+    z-index: 3;
+}
+#particles-JS {
+    position:absolute;
+    height:90%;
+    width: 100%;
+    z-index: 1;
+}

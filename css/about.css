@@ -3,3 +3,10 @@
     background: url(../img/about-background.jpg) fixed center no-repeat;
     background-size: cover;
 }
+.about-text p{
+    color: #6B0C22;
+}
+
+.about-text a {
+    background: #011e29;
+}

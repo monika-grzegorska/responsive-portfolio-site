@@ -1,16 +1,13 @@
 ﻿@media (max-width: 992px) {
     .about-card p {
-        background-color: #EBE7E4;
+        background-color: #011e29;
         border-radius: 20px;
-        opacity: .6;
+        opacity: .9;
+        color:white;
     }
 }
 
 @media (max-width: 768px) {
-    #about {
-        background: url(../img/background-small.jpg) fixed center no-repeat;
-        background-size: cover;
-    }
 }
 
 
@@ -34,8 +31,17 @@
         margin-left: 0;
     }
 
+    .site-name  {
+        margin-top: 5%;
+       top: 30px;
+    }
+
     .site-name p {
-        font-size: 40px;
+        font-size: 35px;
+    }
+    .lead{
+        margin-top: 10%;
+        top: 30px;
     }
 
     .about-card p {
@@ -49,6 +55,9 @@
 
     .projects a {
         width: fit-content;
+    }
+    .contact-form form {
+        border-radius: 15px;
     }
 
     .button-send {

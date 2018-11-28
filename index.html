@@ -15,6 +15,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
     <!--Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -30,100 +31,95 @@
 </head>
 <body>
     <main class="container-fluid p-0 main-class">
-
-
         <!--NAVIGATION-->
-        <div class="header " id="top">
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top">
-                <a class="navbar-brand sticky-top" href="http://grzegorska.pro">
+        <div class="header" id="top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand sticky-top " href="http://grzegorska.pro">
                     <img class="d-inline-block" src="img/logo.png" title="My logo" alt="grzegorska.pro" width="20%">
-                    <div class="text-left text-dark d-inline-block align-middle">
+                    <div class="text-left text-light d-inline-block align-middle">
                         <p class="h5">MONIKA GRZEGÓRSKA</p>
                         <p class="h6">Front-end Developer</p>
                     </div>
                 </a>
-                <div class="navbar-toggler mt-4 mr-1 fixed-top ml-auto border-0 custom-toggler " data-toggle="collapse" data-target="#navbarResponsive">
+
+                <div class="navbar-toggler mt-4 mr-1 fixed-top ml-auto border-0 custom-toggler bg-transparent " data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </div>
                 <div class="collapse navbar-collapse site-navigation mt-0 fixed-top" id="navbarResponsive">
-                    <ul class=" navbar-nav smooth-scroll ml-auto d-flex d-inline-block text-center justify-content-end mb-3" id="menu">
-                        <li class="p-2 current "><a class="navbar-link  d-block text-info btn" id="active" href="#top">HOME</a></li>
-                        <li class="p-2"><a class=" navbar-link d-block text-info btn" href="#about">ABOUT</a></li>
-                        <li class="p-2"><a class="navbar-link  d-block text-info btn" href="#projects">PROJECTS</a></li>
-                        <li class="p-2"><a class="navbar-link d-block text-info btn" href="#contact">CONTACT</a></li>
+                    <ul class=" navbar-nav smooth-scroll ml-auto d-flex d-inline-block text-center justify-content-end mt-3" id="menu">
+                        <li class="p-2 current "><a class="navbar-link  d-block text-white btn" id="active" href="#top">HOME</a></li>
+                        <li class="p-2"><a class=" navbar-link d-block text-white btn" href="#about">ABOUT</a></li>
+                        <li class="p-2"><a class="navbar-link  d-block text-white btn" href="#projects">PROJECTS</a></li>
+                        <li class="p-2"><a class="navbar-link d-block text-white btn" href="#contact">CONTACT</a></li>
                     </ul>
                 </div>
             </nav>
-        </div>
-        <hr class="bg-info" />
 
-
-        <!--WELCOME-->
-        <div class="row welcome text-center d-block" id="welcome">
-            <div class="col-12 site-name p-0">
-                <p class="col-lg-12 col-sm-12 display-1 text-light p-0 card bg-info  mx-auto d-block">Welcome</p>
-            </div>
-            <div class="col-lg-12">
-                <p class="lead"> My name is Monika, and this is my portfolio site</p>
+            <!--WELCOME-->
+            <div class="row welcome text-center d-block ">
+                <div class=" col-12 site-name p-0">
+                    <p class="col-lg-12 col-md-12 col-sm-12 display-1 text-white p-0 card mx-auto d-block">Welcome</p>
+                </div>
+                <div class="col-lg-12 col-md-12 text-white lead">
+                    <p class="card  mx-auto d-block"> My name is Monika, and this is my portfolio site</p>
+                </div>
             </div>
         </div>
-        <hr class="bg-info" />
-
-
         <!--ABOUT-->
-        <h3 class="col-12 bg-white text-info text-center">ABOUT ME</h3>
-        <hr class="bg-info" />
         <div class="row  d-block" id="about">
-            <div class="col-lg-6 card bg-transparent border-0">
+            <h3 class="col-12 bg-transparent section-title text-center">ABOUT ME</h3>
+            <hr />
+            <div class="col-lg-6 card bg-transparent border-0 about-text">
                 <div class="card-body about-card">
                     <img class="card-img-top mx-auto d-block" src="img/ProfilePicture.png" title="My picture" alt="grzegorska.pro" style="width: 50%; margin:auto">
                     <br />
                     <p class=" lead text-center">
-                        Even though I am only starting my career in I.T. 
-                        I have some engineering background I gathered during my work in 
-                        Germany - where on daily basis I have been working with AutoCAD. 
-                        For the past 6 months I have been building up my skills by practicing 
-                        coding skills with the help of befriended .NET specialist who has  
+                        Even though I am only starting my career in I.T.
+                        I have some engineering background I gathered during my work in
+                        Germany - where on daily basis I have been working with AutoCAD.
+                        For the past 6 months I have been building up my skills by practicing
+                        coding skills with the help of befriended .NET specialist who has
                         explained to me what I should know to be useful/successful in current software market.
                     </p>
-                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-lg-4 col-sm-4 btn btn-info text-light mx-auto d-block">My LinkedIn Profile</a>
+                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-lg-4 col-sm-4 btn text-light mx-auto d-block">My LinkedIn Profile</a>
                 </div>
             </div>
         </div>
-        <hr class="bg-info" />
-
-
         <!--PROJECTS-->
         <!--TWO COLUMNS SECTION-->
-        <h3 class="col-12 bg-white text-info text-center">PROJECTS</h3>
-        <hr class="bg-info" />
         <div class="row  d-block projects" id="projects">
-            <div class="row padding">
-                <div class="col-md-12 col-lg-6">
+            <h3 class="col-12 bg-transparent section-title text-center">PROJECTS</h3>
+            <hr />
+            <div class="row padding border-0 border-white">
+                <div class="col-md-12 col-lg-6 project">
                     <div class="card bg-transparent mx-auto d-block border-0">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">happy2eat</h5>
-                            <img class="card-img-top mx-auto d-block" src="img/happy2eatlogo.png" alt="happy2eatlogo" style="width: 50%">
+                            <div class="inner">
+                                <img class="card-img-top mx-auto d-block" src="img/happy2eatlogo.png" alt="happy2eatlogo" style="width: 50%">
+                            </div>
                             <br />
                             <h6 class="card-text text-center text-light font-weight-normal">
                                 My first project
                             </h6>
-                            <a href="https://github.com/monika-grzegorska/react-app-one" class="col-lg-4 col-sm-2 btn btn-info mx-auto d-block">Github</a>
+                            <a href="https://github.com/monika-grzegorska/react-app-one" class="col-lg-4 col-sm-2 btn text-white  mx-auto d-block">Github</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-6">
+                <div class="col-md-12 col-lg-6 project">
                     <div class=" card bg-transparent mx-auto d-block border-0">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">portfolio</h5>
-                            <img class="card-img-top mx-auto d-block" src="img/portfoliologo.png" alt="portfolio logo" style="width: 40%">
+                            <div class="inner">
+                                <img class="card-img-top mx-auto d-block" src="img/portfoliologo.png" alt="portfolio logo" style="width: 40%">
+                            </div>
                             <br />
                             <h6 class="card-text text-center  text-light font-weight-normal">
-                                I started this site because of my Udacity scholarship. 
+                                I started this site because of my Udacity scholarship.
                                 Few days ago I changed it all, because I wanted to develope
                                 my Bootstrap 4 skills.
                             </h6>
-                            <a href="https://github.com/monika-grzegorska/portfolio-website" class=" col-lg-4 col-sm-2 btn btn-info mx-auto d-block">Github</a>
+                            <a href="https://github.com/monika-grzegorska/portfolio-website" class=" col-lg-4 col-sm-2 btn text-white mx-auto d-block">Github</a>
                         </div>
                     </div>
                 </div>
@@ -134,7 +130,9 @@
                     <div class="card bg-transparent mx-auto d-block border-0 ">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">under construction</h5>
-                            <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
+                            <div class="inner">
+                                <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
+                            </div>
                             <br />
                             <h6 class="card-text text-center text-light font-weight-normal">
                                 New projects coming soon
@@ -146,7 +144,9 @@
                     <div class="card bg-transparent mx-auto d-block border-0 ">
                         <div class="card-body">
                             <h5 class="card-title text-light text-center">under construction</h5>
-                            <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
+                            <div class="inner">
+                                <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
+                            </div>
                             <br />
                             <h6 class="card-text text-center text-light font-weight-normal">
                                 New projects coming soon
@@ -156,14 +156,13 @@
                 </div>
             </div>
         </div>
-        <hr class="bg-info" />
 
 
         <!--CONTACT-->
-        <h3 class="col-12 bg-white text-info text-center">CONTACT</h3>
-        <hr class="bg-info" />
+        <h3 class="col-12 bg-white section-title text-center">CONTACT</h3>
+        <hr />
         <div class="row  d-block contact" id="contact">
-            <div class="card bg-info col-lg-6 col-md-10 border-0 d-block mx-auto">
+            <div class="card col-lg-6 col-md-10 border-0 d-block mx-auto contact-form">
                 <form role="form" method="post" id="reused_form" class="form-horizontal form-content" action="mailto:grzegorska.monika.agata@gmail.com">
                     <fieldset>
                         <!-- Text input-->
@@ -190,7 +189,7 @@
                         <!-- Button -->
                         <div class="form-row d-flex justify-content-center button-send mx-auto">
                             <div class="form-group col-lg-2 col-sm-2">
-                                <button class="btn btn-sm btn-light text-muted mx-auto " type="submit">Send</button>
+                                <button class="btn btn-md btn-light ustify-content-center mx-auto " type="submit">Send</button>
                             </div>
                         </div>
                     </fieldset>
@@ -200,16 +199,16 @@
 
 
         <!--CONTACT CONNECT-->
-        <div class="col-12 social fa-3x padding bg-white text-center">
-            <a href="https://github.com/monika-grzegorska"><i class="fab text-info fa-github-square"></i></a>
-            <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab text-info fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/monika.grzegorska.10"><i class="fab text-info fa-facebook"></i></a>
-            <a href="https://www.instagram.com/m.grzeggi/"><i class="fab text-info fa-instagram"></i></a>
-            <a href="mailto:grzegorska.monika.agata@gmail.com"><i class="far text-info fa-envelope"></i></a>
+        <div class="col-12 social fa-3x padding bg-white text-center contact-connect">
+            <a href="https://github.com/monika-grzegorska"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab fa-linkedin icon"></i></a>
+            <a href="https://www.facebook.com/monika.grzegorska.10"><i class="fab fa-facebook icon"></i></a>
+            <a href="https://www.instagram.com/m.grzeggi/"><i class="fab fa-instagram icon"></i></a>
+            <a href="mailto:grzegorska.monika.agata@gmail.com"><i class="far fa-envelope icon"></i></a>
         </div>
 
         <!--SIGNATURE-->
-        <div class="col-lg-12 col-sm-12 bg-light p-0">
+        <div class="col-lg-12 col-sm-12 p-0 signature">
             <h6 class="card-body text-center">Monika Grzegórska &#169 2018</h6>
         </div>
     </main>

@@ -1,4 +1,25 @@
 ﻿#projects {
-    background: url(../img/project-background.jpg) fixed center no-repeat;
+    /*background: url(../img/project-background.jpg) fixed center no-repeat;*/
+    background-color: #011e29;
     background-size: cover;
 }
+
+.projects a {
+    background: #6B0C22;
+}
+.project {
+    width:50%;
+}
+
+.inner {
+    overflow: hidden;
+}
+.inner img {
+    transition: all 1.5s ease;
+}
+
+    .inner:hover img {
+        transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }

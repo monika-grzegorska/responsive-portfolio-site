@@ -6,30 +6,120 @@ $(document).ready(function () {
             $('.navbar-collapse').collapse('hide');
         });
     }
-    //moving dots
+    //stars
 
-    //TweenMax.set("div", { xPercent: "-0%", yPercent: "-0%" })
+    //particlesJS("particles-JS", {
+    //    "particles": {
+    //        "number": {
+    //            "value": 700,
+    //            "density": {
+    //                "enable": true,
+    //                "value_area": 789.1476416322727
+    //            }
+    //        },
+    //        "color": {
+    //            "value": "#5bc0de"
+    //        },
+    //        "shape": {
+    //            "type": "circle",
+    //            "stroke": {
+    //                "width": 0,
+    //                "color": "#000000"
+    //            },
+    //            "polygon": {
+    //                "nb_sides": 5
+    //            },
+    //            "image": {
+    //                "src": "img/github.svg",
+    //                "width": 150,
+    //                "height": 150
+    //            }
+    //        },
+    //        "opacity": {
+    //            "value": 0.48927153781200905,
+    //            "random": false,
+    //            "anim": {
+    //                "enable": true,
+    //                "speed": 0.7,
+    //                "opacity_min": 0.1,
+    //                "sync": false
+    //            }
+    //        },
+    //        "size": {
+    //            "value": 4,
+    //            "random": true,
+    //            "anim": {
+    //                "enable": true,
+    //                "speed": 3,
+    //                "size_min": 0,
+    //                "sync": false
+    //            }
+    //        },
+    //        "line_linked": {
+    //            "enable": false,
+    //            "distance": 150,
+    //            "color": "#ffffff",
+    //            "opacity": 0.4,
+    //            "width": 1
+    //        },
+    //        "move": {
+    //            "enable": true,
+    //            "speed": 0.3,
+    //            "direction": "none",
+    //            "random": true,
+    //            "straight": false,
+    //            "out_mode": "out",
+    //            "bounce": false,
+    //            "attract": {
+    //                "enable": false,
+    //                "rotateX": 600,
+    //                "rotateY": 1200
+    //            }
+    //        }
+    //    },
+    //    "interactivity": {
+    //        "detect_on": "div",
+    //        "events": {
+    //            "onhover": {
+    //                "enable": true,
+    //                "mode": "bubble"
+    //            },
+    //            "onclick": {
+    //                "enable": true,
+    //                "mode": "push"
+    //            },
+    //            "resize": true
+    //        },
+    //        "modes": {
+    //            "grab": {
+    //                "distance": 400,
+    //                "line_linked": {
+    //                    "opacity": 1
+    //                }
+    //            },
+    //            "bubble": {
+    //                "distance": 83.91608391608392,
+    //                "size": 1,
+    //                "duration": 3,
+    //                "opacity": 1,
+    //                "speed": 3
+    //            },
+    //            "repulse": {
+    //                "distance": 200,
+    //                "duration": 0.4
+    //            },
+    //            "push": {
+    //                "particles_nb": 4
+    //            },
+    //            "remove": {
+    //                "particles_nb": 2
+    //            }
+    //        }
+    //    },
+    //    "retina_detect": true,
+    //    "interactive": true
+    //});
 
-    //var total = 70, container = document.getElementById('welcome'),
-    //    w = container.offsetWidth, h = container.offsetHeight;
-
-    //for (var i = 0, div; i < total; i++) {
-    //    div = document.createElement('div'); div.className = 'dot';
-    //    container.appendChild(div);
-    //    TweenMax.set(div, {
-    //        x: R(0, w), y: R(0, 0), opacity: 1, scale: R(0, 0.5) + 0.5,
-    //        backgroundColor: "hsl(" + R(0, 0) + ",6%,100%)"
-    //    });
-    //    animm(div);
-    //};
-
-    //function animm(elm) {
-    //    TweenMax.to(elm, R(0, 5) + 3, { y: h, ease: Linear.easeNone, repeat: -1, delay: -5 });
-    //    TweenMax.to(elm, R(0, 5) + 1, { x: '+=70', repeat: -1, yoyo: true, ease: Sine.easeInOut })
-    //    TweenMax.to(elm, R(0, 1) + 0.5, { opacity: 0, repeat: -1, yoyo: true, ease: Sine.easeInOut })
-    //};
-
-    //function R(min, max) { return min + (Math.random() * (max - min)) };
-
+    
         addHideNavbarHandlerToTogglerMenu();
 });

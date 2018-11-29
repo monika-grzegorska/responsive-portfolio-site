@@ -13,7 +13,7 @@ $(document).ready(function () {
             "number": {
                 "value": 700,
                 "density": {
-                    "enable": true,
+                    "enable": false,
                     "value_area": 789.1476416322727
                 }
             },

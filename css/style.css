@@ -2,11 +2,20 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     overflow-y: scroll;
+    height:100%;
+}
+body {
+    height:100%;
 }
 
 hr {
     width: 30%;
     background: #6B0C22;
+}
+.header {
+    background: url(../img/background-new.jpg) fixed center no-repeat;
+    background-size: cover;
+    position:relative;
 }
 
 .section-title {

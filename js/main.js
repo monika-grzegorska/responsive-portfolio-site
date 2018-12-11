@@ -1,6 +1,5 @@
 
 $(document).ready(function () {
-
     var addHideNavbarHandlerToTogglerMenu = function () {
         $('.navbar-nav>li>a').on('click', function () {
             $('.navbar-collapse').collapse('hide');
@@ -120,6 +119,17 @@ $(document).ready(function () {
         "interactive": true
     });
 
-    
+    // balls
+
+    TweenMax.staggerFrom('.ball', 8, {
+        x: 200,
+        scale: 0.8,
+        opacity: 0,
+        ease: Elastic.easeOut,
+        repeat: 30,
+
+    }, 0.1);
+
+
         addHideNavbarHandlerToTogglerMenu();
 });

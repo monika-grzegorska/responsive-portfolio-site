@@ -1,4 +1,7 @@
 ﻿@media (max-width: 992px) {
+    #about {
+        background: white;
+    }
     .about-card p {
         background-color: #011e29;
         border-radius: 20px;

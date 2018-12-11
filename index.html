@@ -14,7 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
     <!--Meta tags -->
@@ -56,7 +56,7 @@
                     </div>
                 </a>
 
-                <div class="navbar-toggler mt-4 mr-1 fixed-top ml-auto border-0 custom-toggler bg-transparent " data-toggle="collapse" data-target="#navbarResponsive">
+                <div class="navbar-toggler mt-4 mr-1 fixed-top ml-auto border-0 custom-toggler bg-transparent" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </div>
                 <div class="collapse navbar-collapse site-navigation mt-0 fixed-top" id="navbarResponsive">
@@ -81,11 +81,19 @@
         </div>
         <!--ABOUT-->
         <div class="row  d-block" id="about">
-            <h3 class="col-12 bg-transparent section-title text-center">ABOUT ME</h3>
-            <hr />
+            <div class=" bg-white pb-1">
+                <h3 class="col-12 section-title text-center">ABOUT ME</h3>
+                <div class="gsap-balls">
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+            </div>
             <div class="col-lg-6 card bg-transparent border-0 about-text">
                 <div class="card-body about-card">
-                    <img class="card-img-top mx-auto d-block" src="img/ProfilePicture.png" title="My picture" alt="grzegorska.pro" style="width: 50%; margin:auto">
+                    <img class="card-img-top mx-auto d-block" src="img/ProfilePicture-new.png" title="My picture" alt="grzegorska.pro" style="width: 50%; margin:auto">
                     <br />
                     <p class=" lead text-center">
                         Even though I am only starting my career in I.T.
@@ -101,13 +109,19 @@
         </div>
         <!--PROJECTS-->
         <!--TWO COLUMNS SECTION-->
-        <div class="row  d-block projects" id="projects">
+        <div class="row  d-block mx-auto projects" id="projects">
             <h3 class="col-12 bg-transparent section-title text-center">PROJECTS</h3>
-            <hr />
-            <div class="row padding border-0 border-white">
-                <div class="col-md-12 col-lg-6 project">
+            <div class="gsap-balls">
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+                <div class="ball"></div>
+            </div>
+            <div class="row p-2 justify-content-center">
+                <div class="col-md-12 col-lg-6 p-2 project">
                     <div class="card bg-transparent mx-auto d-block border-0">
-                        <div class="card-body">
+                        <div class="card-body project-card mx-auto">
                             <h5 class="card-title text-light text-center">happy2eat</h5>
                             <div class="inner">
                                 <img class="card-img-top mx-auto d-block" src="img/happy2eatlogo.png" alt="happy2eatlogo" style="width: 50%">
@@ -121,9 +135,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-6 project">
+                <div class="col-md-12 col-lg-6 p-2 project">
                     <div class=" card bg-transparent mx-auto d-block border-0">
-                        <div class="card-body">
+                        <div class="card-body project-card mx-auto">
                             <h5 class="card-title text-light text-center">portfolio</h5>
                             <div class="inner">
                                 <img class="card-img-top mx-auto d-block" src="img/portfoliologo.png" alt="portfolio logo" style="width: 40%">
@@ -140,10 +154,10 @@
                 </div>
             </div>
             <!--NEXT TWO COLUMNS-->
-            <div class="row padding">
-                <div class="col-md-12 col-lg-6">
-                    <div class="card bg-transparent mx-auto d-block border-0 ">
-                        <div class="card-body">
+            <div class="row  p-2 justify-content-center">
+                <div class="col-md-12 col-lg-6 project">
+                    <div class="card bg-transparent mx-auto d-block border-0 p-2">
+                        <div class="card-body project-card mx-auto">
                             <h5 class="card-title text-light text-center">under construction</h5>
                             <div class="inner">
                                 <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
@@ -155,9 +169,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-6">
-                    <div class="card bg-transparent mx-auto d-block border-0 ">
-                        <div class="card-body">
+                <div class="col-md-12 col-lg-6 project">
+                    <div class="card bg-transparent mx-auto d-block border-0 p-2">
+                        <div class="card-body project-card mx-auto">
                             <h5 class="card-title text-light text-center">under construction</h5>
                             <div class="inner">
                                 <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
@@ -175,7 +189,13 @@
 
         <!--CONTACT-->
         <h3 class="col-12 bg-white section-title text-center">CONTACT</h3>
-        <hr />
+        <div class="gsap-balls">
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+            <div class="ball"></div>
+        </div>
         <div class="row  d-block contact" id="contact">
             <div class="card col-lg-6 col-md-10 border-0 d-block mx-auto contact-form">
                 <form role="form" method="post" id="reused_form" class="form-horizontal form-content" action="mailto:grzegorska.monika.agata@gmail.com">

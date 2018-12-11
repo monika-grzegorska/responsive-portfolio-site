@@ -1,7 +1,8 @@
-﻿#projects {
-    /*background: url(../img/project-background.jpg) fixed center no-repeat;*/
+﻿.project-card {
     background-color: #011e29;
     background-size: cover;
+    width: 90%;
+    position:center;
 }
 
 .projects a {
@@ -11,7 +12,7 @@
     width:50%;
 }
 
-.inner {
+/*.inner {
     overflow: hidden;
 }
 .inner img {
@@ -19,6 +20,19 @@
 }
 
     .inner:hover img {
+        transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+    }*/
+/*.project {
+    overflow: hidden;
+}*/
+
+    .project .card {
+        transition: all 1.5s ease;
+    }
+
+    .project:hover .card{
         transform: scale(1.2);
         -moz-transform: scale(1.2);
         -webkit-transform: scale(1.2);

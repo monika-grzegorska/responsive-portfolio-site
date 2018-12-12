@@ -6,27 +6,16 @@
 }
 
 .projects a {
-    background: #6B0C22;
+    background: white;
+    color: #6B0C22;
+    cursor: none;
+    touch-action: none;
 }
 .project {
     width:50%;
+   cursor: none;
+  touch-action: none;
 }
-
-/*.inner {
-    overflow: hidden;
-}
-.inner img {
-    transition: all 1.5s ease;
-}
-
-    .inner:hover img {
-        transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-    }*/
-/*.project {
-    overflow: hidden;
-}*/
 
     .project .card {
         transition: all 1.5s ease;
@@ -37,3 +26,17 @@
         -moz-transform: scale(1.2);
         -webkit-transform: scale(1.2);
     }
+.circle {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #6B0C22;
+    border-radius: 80%;
+    backface-visibility: hidden;
+    pointer-events: none;
+    opacity: 0.5;
+}

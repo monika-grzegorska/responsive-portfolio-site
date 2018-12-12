@@ -32,8 +32,8 @@ main-class {
 }
 .ball {
     display: inline-block;
-    width: 15px;
-    height: 15px;
+    width: 10px;
+    height: 10px;
     background-color: #6B0C22;
     border-radius: 50%;
 }

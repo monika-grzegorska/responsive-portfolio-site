@@ -121,7 +121,7 @@ $(document).ready(function () {
 
     // balls
 
-    TweenMax.staggerFrom('.ball', 8, {
+    TweenMax.staggerFrom('.ball', 6, {
         x: 200,
         scale: 0.8,
         opacity: 0,
@@ -129,6 +129,37 @@ $(document).ready(function () {
         repeat: 30,
 
     }, 0.1);
+
+    //projects- changing kursor
+
+    Array.prototype.forEach.call(document.querySelectorAll('.project'), function (media) {
+
+        const circle = document.querySelector("." + media.getAttribute('data-circle'));
+        TweenMax.set(circle, { scale: 0, xPercent: -50, yPercent: -50 });
+
+        media.addEventListener("pointerenter", function (e) {
+            TweenMax.to(circle, 0.3, { scale: 1, opacity: 1 });
+            positionCircle(e, media, circle);
+        });
+
+        media.addEventListener("pointerleave", function (e) {
+            TweenMax.to(circle, 0.3, { scale: 0, opacity: 0 });
+            positionCircle(e, media, circle);
+        });
+
+        media.addEventListener("pointermove", function (e) {
+            positionCircle(e, media, circle);
+        });
+
+    });
+
+    function positionCircle(e, media, circle) {
+        var rect = media.getBoundingClientRect();
+        var relX = e.pageX - rect.left;
+        var relY = e.pageY - rect.top - window.scrollY;
+        TweenMax.to(circle, 0.15, { x: relX, y: relY });
+    }
+
 
 
         addHideNavbarHandlerToTogglerMenu();

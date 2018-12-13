@@ -165,6 +165,8 @@ $(document).ready(function () {
     var timeline = new TimelineMax();
     timeline.from(".logo", 1, { x: -100, opacity: 0 }, 0)
         .from(".logo-title", 1, { x: -100, opacity: 0 }, 0)
+        .from(".site-name", 1, { y: -100, opacity: 0 }, 0)
+        .from(".lead", 1, { y: 100, opacity: 0 }, 0)
         .from(".site-navigation", 2, { x: 100, opacity: 0 });
 
     // loading page

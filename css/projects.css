@@ -8,8 +8,8 @@
 .projects a {
     background: white;
     color: #6B0C22;
-    cursor: none;
-    touch-action: none;
+    cursor: none !important;
+    text-decoration:none;
 }
 .project {
     width:50%;

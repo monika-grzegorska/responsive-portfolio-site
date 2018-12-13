@@ -160,6 +160,14 @@ $(document).ready(function () {
         TweenMax.to(circle, 0.15, { x: relX, y: relY });
     }
 
+    // navigation apearing
+
+    var timeline = new TimelineMax();
+    timeline.from(".logo", 1, { x: -100, opacity: 0 }, 0)
+        .from(".logo-title", 1, { x: -100, opacity: 0 }, 0)
+        .from(".site-navigation", 2, { x: 100, opacity: 0 });
+
+    // loading page
 
 
         addHideNavbarHandlerToTogglerMenu();

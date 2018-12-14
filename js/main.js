@@ -4,6 +4,7 @@ $(document).ready(function () {
         $('.navbar-nav>li>a').on('click', function () {
             $('.navbar-collapse').collapse('hide');
         });
+
     }
     //stars
 
@@ -160,13 +161,14 @@ $(document).ready(function () {
         TweenMax.to(circle, 0.15, { x: relX, y: relY });
     }
 
-    // navigation apearing
+    // navigation appearing
 
     var timeline = new TimelineMax();
     timeline.from(".logo", 1, { x: -100, opacity: 0 }, 0)
         .from(".logo-title", 1, { x: -100, opacity: 0 }, 0)
         .from(".site-name", 1, { y: -100, opacity: 0 }, 0)
         .from(".lead", 1, { y: 100, opacity: 0 }, 0)
+        .from(".navbar-toggler-icon", 1, { x: 100, opacity: 0 }, 0)
         .from(".site-navigation", 2, { x: 100, opacity: 0 });
 
     // loading page

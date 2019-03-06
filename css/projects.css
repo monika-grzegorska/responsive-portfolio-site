@@ -1,41 +1,14 @@
-﻿.project-card {
-    background-color: #011e29;
-    background-size: cover;
-    width: 90%;
-    position:center;
+﻿.projects-name {
+    text-align: center;
+    font-family: "Semplicita Pro";
+    color: #FC6183;
+    margin-bottom: 10px;
 }
 
-.projects a {
-    background: white;
-    color: #6B0C22;
-    cursor: none !important;
+.carousel {
+    border: solid #FFE372 20px;
+    padding: 30px;
 }
-.project {
-    width:50%;
-   cursor: none;
-  touch-action: none;
-}
-
-    .project .card {
-        transition: all 1.5s ease;
-    }
-
-    .project:hover .card{
-        transform: scale(1.2);
-        -moz-transform: scale(1.2);
-        -webkit-transform: scale(1.2);
-    }
-.circle {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #6B0C22;
-    border-radius: 80%;
-    backface-visibility: hidden;
-    pointer-events: none;
-    opacity: 0.5;
+span .carousel-control-prev-icon, .carousel-control-next-icon {
+    color: #FC6183 !important;
 }

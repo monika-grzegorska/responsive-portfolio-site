@@ -2,14 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Portfolio Site</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/welcome.css">
-    <link rel="stylesheet" href="css/responsive-site.css">
+    <title>My Portfolio</title>
+    <!--Scripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -23,12 +17,16 @@
     <meta name="description" content="Portfolio site">
     <meta name="author" content="Monika Grzegórska">
     <!-- Custom font for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/ ?family=Lato:italic" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <title>Monika Grzegórska - Portfolio </title>
-    <link rel="Shortcut icon" href="img/logo.png" />
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/responsive-site.css">
     <!-- Hotjar Tracking Code for http://grzegorska.pro/ -->
     <script>
         (function (h, o, t, j, a, r) {
@@ -43,217 +41,181 @@
 
 </head>
 <body>
-    <main class="container-fluid p-0 main-class">
-        <!--LOADING-->
-        <svg height="200" width="200" class="circle">
-            <circle class="circle__line" cx="100" cy="100" r="96" stroke="#6B0C22" stroke-width="2" fill-opacity="0" />
-        </svg>
-        <!--NAVIGATION-->
-        <div class="header" id="top">
-            <div id="particles-JS"></div>
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand sticky-top " href="http://grzegorska.pro">
-                    <img class="d-inline-block logo" src="img/logo.png" title="My logo" alt="grzegorska.pro" width="20%">
-                    <div class="text-left text-light d-inline-block align-middle logo-title">
-                        <p class="h5">MONIKA GRZEGÓRSKA</p>
-                        <p class="h6">Front-end Developer</p>
-                    </div>
+    <!--HEADER-->
+    <div class="header fixed-top row ">
+        <!--PAGE NAME-->
+        <div class="col pt-4" id="page-name">
+            <a>
+                <div class="d-inline-block text-left align-left">
+                    <p class="name">MONIKA GRZEGÓRSKA</p>
+                    <p class="function pt-2">FRONT-END DEVELOPER</p>
+                </div>
+            </a>
+        </div>
+        <!--MENU-->
+
+        <nav class="navbar navbar-expand-lg col">
+            <div class="navbar-toggler mt-4 mr-1 fixed-top ml-auto border-0 custom-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </div>
+            <!--pc menu-->
+            <div class="collapse navbar-collapse site-navigation mt-0 " id="navbarResponsive">
+                <ul class=" navbar-nav smooth-scroll ml-auto d-flex d-inline-block text-center mt-3" id="menu">
+                    <li class="p-2 current "><a class="navbar-link  d-block btn" id="active" href="#welcome">HOME</a></li>
+                    <li class="p-2"><a class=" navbar-link d-block btn" href="#about">ABOUT</a></li>
+                    <li class="p-2"><a class="navbar-link  d-block btn" href="#projects">MY PROJECTS</a></li>
+                    <li class="p-2"><a class="navbar-link  d-block btn" href="https://monika-grzegorska.blogspot.com/">ARTICLES</a></li>
+                    <li class="p-2"><a class="navbar-link d-block btn" href="#contact">CONTACT</a></li>
+                </ul>
+                <a id="logo" href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/">
+                    <img class="d-inline-block logo" src="images/linkedin.png" title="Linked In" width="15%">
                 </a>
-
-                <div class="navbar-toggler mt-4 mr-1 fixed-top ml-auto border-0 custom-toggler bg-transparent" data-toggle="collapse" data-target="#navbarResponsive">
-                    <span class="navbar-toggler-icon"></span>
-                </div>
-                <div class="collapse navbar-collapse site-navigation mt-0 fixed-top" id="navbarResponsive">
-                    <ul class=" navbar-nav smooth-scroll ml-auto d-flex d-inline-block text-center justify-content-end mt-3" id="menu">
-                        <li class="p-2 current "><a class="navbar-link  d-block text-white btn" id="active" href="#top">HOME</a></li>
-                        <li class="p-2"><a class=" navbar-link d-block text-white btn" href="#about">ABOUT</a></li>
-                        <li class="p-2"><a class="navbar-link  d-block text-white btn" href="#projects">PROJECTS</a></li>
-                        <li class="p-2"><a class="navbar-link d-block text-white btn" href="#contact">CONTACT</a></li>
-                    </ul>
-                </div>
-            </nav>
-
-            <!--WELCOME-->
-            <div class="row welcome text-center d-block ">
-                <div class=" col-12 site-name p-0">
-                    <p class="col-lg-12 col-md-12 col-sm-12 display-1 text-white p-0 card mx-auto d-block">Welcome</p>
-                </div>
-                <div class="col-lg-12 col-md-12 text-white lead">
-                    <p class="card  mx-auto d-block"> My name is Monika, and this is my portfolio site</p>
+            </div>
+        </nav>
+    </div>
+    <main>
+        <!--WELCOME-->
+        <section id="welcome">
+            <div class="container-fluid">
+                <p class="welcome-name display-1">WELCOME</p>
+                <p class="welcome-secondname h1">on my portfolio site</p>
+                <div id="welcome-img">
+                    <img class="welcome-img mx-auto d-block" src="images/BackgroundHome.png">
                 </div>
             </div>
-        </div>
+        </section>
         <!--ABOUT-->
-        <div class="row  d-block" id="about">
-            <div class=" bg-white pb-1">
-                <h3 class="col-12 section-title text-center">ABOUT ME</h3>
-                <div class="gsap-balls">
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
-                    <div class="ball"></div>
+        <section id="about">
+            <div class="container-fluid row">
+
+                <div class=" col-lg-7 col-md-7 col-sm-12 about-leftside">
+                    <p class="about-name display-1 col-5 mx-auto ">ABOUT ME</p>
+                    <!--about text-->
+                    <div id="about-text">
+                        <p class=" about-text mx-auto col-lg-5 col-md-5 col-sm-12 ">
+                            Even though I am only starting my career in I.T.
+                            I have some engineering background I gathered during my work in
+                            Germany - where on daily basis I have been working with AutoCAD.
+                            For the past 6 months I have been building up my skills by practicing
+                            coding skills with the help of befriended .NET specialist who has
+                            explained to me what I should know to be useful/successful in current software market.
+                        </p>
+                    </div>
+
+                    <!--about technologies-->
+                    <div id="about-tech">
+                        <img class="d-inline-block img-fluid " src="images/know.png">
+                    </div>
+                </div>
+
+                <!--about image-->
+
+                <div class="col-5 about-img" id="about-img">
+                    <img class="d-inline-block " src="images/superhero.png">
                 </div>
             </div>
-            <div class="col-lg-6 card bg-transparent border-0 about-text">
-                <div class="card-body about-card">
-                    <img class="card-img-top mx-auto d-block" src="img/ProfilePicture-new.png" title="My picture" alt="grzegorska.pro" style="width: 50%; margin:auto">
-                    <br />
-                    <p class=" lead text-center">
-                        Even though I am only starting my career in I.T.
-                        I have some engineering background I gathered during my work in
-                        Germany - where on daily basis I have been working with AutoCAD.
-                        For the past 6 months I have been building up my skills by practicing
-                        coding skills with the help of befriended .NET specialist who has
-                        explained to me what I should know to be useful/successful in current software market.
-                    </p>
-                    <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/" class="col-lg-4 col-sm-4 btn text-light mx-auto d-block">My LinkedIn Profile</a>
-                </div>
-            </div>
-        </div>
+        </section>
         <!--PROJECTS-->
-        <!--TWO COLUMNS SECTION-->
-        <div class="row  d-block mx-auto projects" id="projects">
-            <h3 class="col-12 bg-transparent section-title text-center">PROJECTS</h3>
-            <div class="gsap-balls">
-                <div class="ball"></div>
-                <div class="ball"></div>
-                <div class="ball"></div>
-                <div class="ball"></div>
-                <div class="ball"></div>
-            </div>
-            <div class="row p-2 justify-content-center">
-                <div class="col-md-12 col-lg-6 p-2 project" data-circle="js-circle-1">
-                    <div class="card bg-transparent mx-auto d-block border-0">
-                        <div class="card-body project-card mx-auto">
-                            <h5 class="card-title text-light text-center">happy2eat</h5>
-                            <div class="inner">
-                                <img class="card-img-top mx-auto d-block" src="img/happy2eatlogo.png" alt="happy2eatlogo" style="width: 50%">
-                            </div>
-                            <br />
-                            <h6 class="card-text text-center text-light font-weight-normal">
-                                The site which I am writing, enabling you to order dishes
-                                from a specific restaurant chosen by the user
-                            </h6>
-                            <a href="https://github.com/monika-grzegorska/react-app-one" class="col-lg-4 col-sm-2 btn  mx-auto d-block">Github</a>
-                        </div>
-                    </div>
-                    <div class="circle js-circle-1"></div>
+        <section id="projects">
+            <div class="container-fluid row">
+                <!--projects image-->
+                <div class="col-6 text-center" id="projects-img">
+                    <img class="d-inline-block" src="images/lightbulb.png">
                 </div>
-                <div class="col-md-12 col-lg-6 p-2 project" data-circle="js-circle-2">
-                    <div class=" card bg-transparent mx-auto d-block border-0">
-                        <div class="card-body project-card mx-auto">
-                            <h5 class="card-title text-light text-center">portfolio</h5>
-                            <div class="inner">
-                                <img class="card-img-top mx-auto d-block" src="img/portfoliologo.png" alt="portfolio logo" style="width: 40%">
-                            </div>
-                            <br />
-                            <h6 class="card-text text-center  text-light font-weight-normal">
-                                I started this site because of my Udacity scholarship.
-                                I develop my skills regarding bootstrap every day,
-                                which is why the appearance of the website often changes
-                            </h6>
-                            <a href="https://github.com/monika-grzegorska/responsive-portfolio-site" class=" col-lg-4 col-sm-2 btn mx-auto d-block">Github</a>
-                        </div>
-                    </div>
-                    <div class="circle js-circle-2"></div>
-                </div>
-            </div>
-            <!--NEXT TWO COLUMNS-->
-            <div class="row  p-2 justify-content-center">
-                <div class="col-md-12 col-lg-6 project" data-circle="js-circle-3">
-                    <div class="card bg-transparent mx-auto d-block border-0 p-2">
-                        <div class="card-body project-card mx-auto">
-                            <h5 class="card-title text-light text-center">under construction</h5>
-                            <div class="inner">
-                                <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
-                            </div>
-                            <br />
-                            <h6 class="card-text text-center text-light font-weight-normal">
-                                New projects coming soon
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="circle js-circle-3"></div>
-                </div>
-                <div class="col-md-12 col-lg-6 project" data-circle="js-circle-4">
-                    <div class="card bg-transparent mx-auto d-block border-0 p-2">
-                        <div class="card-body project-card mx-auto">
-                            <h5 class="card-title text-light text-center">under construction</h5>
-                            <div class="inner">
-                                <img class="card-img-top mx-auto d-block" src="img/under.png" alt="new logo" style="width: 40%">
-                            </div>
-                            <br />
-                            <h6 class="card-text text-center text-light font-weight-normal">
-                                New projects coming soon
-                            </h6>
-                        </div>
-                    </div>
-                    <div class="circle js-circle-4"></div>
-                </div>
-            </div>
-        </div>
 
+                <div class="col-lg-6 col-md-6 col-sm-12" id="projects-rightside">
+                    <p class="projects-name display-1 mx-auto">PROJECTS</p>
+                    <!--projects slides-->
+                    <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
 
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                        </ol>
+
+                        <div class="carousel-inner" role="listbox">
+                            <a href="https://github.com/monika-grzegorska/react-app-one">                            <div class="carousel-item active">
+                                <img class="d-block slides-img" src="images/happy.png" alt="First slide">
+                            </div>
+                            </a>
+                            <a href="https://github.com/monika-grzegorska/react-app-one">
+                            <div class="carousel-item">
+                                <img class="d-block slides-img" src="images/portfolio.png" alt="Second slide">
+                            </div>
+                                </a>
+
+                        </div>
+
+                        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
         <!--CONTACT-->
-        <h3 class="col-12 bg-white section-title text-center">CONTACT</h3>
-        <div class="gsap-balls">
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-            <div class="ball"></div>
-        </div>
-        <div class="row  d-block contact" id="contact">
-            <div class="card col-lg-6 col-md-10 border-0 d-block mx-auto contact-form">
-                <form role="form" method="post" id="reused_form" class="form-horizontal form-content" action="mailto:grzegorska.monika.agata@gmail.com">
-                    <fieldset>
-                        <!-- Text input-->
-                        <div class="form-row d-flex justify-content-center mx-auto">
-                            <div class="form-group col-lg-4 col-md-4">
-                                <label for="field-name" data-error="Please write Your name">Name:</label>
-                                <input class="form-control text-center" type="text" id="name" name="name" placeholder="Enter Your Name" required>
-                            </div>
+        <section id="contact">
+            <div class="container-fluid  row">
+                <div id="contact-rightside col-7 mx-auto">
+                    <p class="contact-name display-1  mx-auto col-8">CONTACT ME</p>
+                    <!--contact form-->
+                    <div class="col-12" id="contact-form">
+                        <form role="form" method="post" id="reused_form" class="form-horizontal form-content  text-center" action="mailto:grzegorska.monika.agata@gmail.com">
+                            <fieldset>
+                                <!-- Text input-->
+                                <div class="form-row d-flex justify-content-center mx-auto">
+                                    <div class="form-group col-lg-4 col-md-4 col-sm-12">
+                                        <label for="field-name" data-error="Please write Your name"></label>
+                                        <input class="form-control text-center" type="text" id="name" name="name" placeholder="ENTER YOUR NAME" required>
+                                    </div>
+                                </div>
+                                <!-- Text input-->
+                                <div class="form-row d-flex justify-content-center mx-auto">
+                                    <div class="form-group col-lg-4 col-md-4">
+                                        <label for="form-email" data-error="Please write Your email"></label>
+                                        <input class="form-control text-center" type="email" id="email" name="email" value="email@example.com" required>
+                                    </div>
+                                </div>
+                                <!-- Textarea -->
+                                <div class="form-row d-flex justify-content-center mx-auto">
+                                    <div class="form-group col-lg-4 col-md-4  col-sm-12 ">
+                                        <label for="form-text"></label>
+                                        <textarea class="form-control" id="textarea" name="textarea" maxlength="6000" rows="5" placeholder="WRITE TO ME" required></textarea>
+                                    </div>
+                                </div>
+                                <!-- Button -->
+                                <div class="form-row d-flex justify-content-center button-send mx-auto">
+                                    <div class="form-group col-lg-2 col-sm-4">
+                                        <button class="btn btn-md btn-light ustify-content-center mx-auto " type="submit">SEND</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    <!--contact icons-->
+                    <div class="" id="contact-icons">
+                        <div class="col-12 social fa-3x padding text-center contact-connect">
+                            <a href="https://github.com/monika-grzegorska"><i class="fab fa-github-square icon"></i></a>
+                            <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab fa-linkedin icon"></i></a>
+                            <a href="https://www.facebook.com/monika.grzegorska.10"><i class="fab fa-facebook icon"></i></a>
+                            <a href="https://www.instagram.com/m.grzeggi/"><i class="fab fa-instagram icon"></i></a>
+                            <a href="mailto:grzegorska.monika.agata@gmail.com"><i class="far fa-envelope icon"></i></a>
                         </div>
-                        <!-- Text input-->
-                        <div class="form-row d-flex justify-content-center mx-auto">
-                            <div class="form-group col-lg-4 col-md-4">
-                                <label for="form-email" data-error="Please write Your email">E-mail:</label>
-                                <input class="form-control text-center" type="email" id="email" name="email" value="email@example.com" required>
-                            </div>
-                        </div>
-                        <!-- Textarea -->
-                        <div class="form-row d-flex justify-content-center mx-auto">
-                            <div class="form-group col-lg-4 col-md-4">
-                                <label for="form-text">Your message:</label>
-                                <textarea class="form-control" id="textarea" name="textarea" maxlength="6000" rows="7"></textarea>
-                            </div>
-                        </div>
-                        <!-- Button -->
-                        <div class="form-row d-flex justify-content-center button-send mx-auto">
-                            <div class="form-group col-lg-2 col-sm-2">
-                                <button class="btn btn-md btn-light ustify-content-center mx-auto " type="submit">Send</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+                    </div>
+                </div>
+                <!--contact image-->
+                <div class="col-6" id="contact-img">
+                    <img class="d-inline-block img-fluid" src="images/send.png">
+                </div>
             </div>
-        </div>
+        </section>
 
-
-        <!--CONTACT CONNECT-->
-        <div class="col-12 social fa-3x padding bg-white text-center contact-connect">
-            <a href="https://github.com/monika-grzegorska"><i class="fab fa-github-square icon"></i></a>
-            <a href="https://www.linkedin.com/in/monika-agata-grzeg%C3%B3rska-7a151314a/"><i class="fab fa-linkedin icon"></i></a>
-            <a href="https://www.facebook.com/monika.grzegorska.10"><i class="fab fa-facebook icon"></i></a>
-            <a href="https://www.instagram.com/m.grzeggi/"><i class="fab fa-instagram icon"></i></a>
-            <a href="mailto:grzegorska.monika.agata@gmail.com"><i class="far fa-envelope icon"></i></a>
-        </div>
-
-        <!--SIGNATURE-->
-        <div class="col-lg-12 col-sm-12 p-0 signature">
-            <h6 class="card-body text-center mb-0">Monika Grzegórska &#169 2018</h6>
-        </div>
     </main>
 </body>
 </html>

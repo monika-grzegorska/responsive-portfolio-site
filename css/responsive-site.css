@@ -1,73 +1,36 @@
 ﻿@media (max-width: 992px) {
-    #about {
-        background: white;
-    }
-    .about-card p {
-        background-color: #011e29;
-        border-radius: 20px;
-        opacity: .9;
-        color:white;
-    }
-    .site-navigation ul {
-        border-radius: 0px;
-        margin-top: 0 !important;
-    }
 }
 
 @media (max-width: 768px) {
+    /*ALL*/
+    .container-fluid {
+        display: grid;
+    }
+    #about-img, #projects-img, #contact-img, #welcome-img , #logo {
+        display: none;
+    }
+    .about-name, .contact-name, .projects-name, .welcome-name {
+        font-size: 30px;
+    }
+    /*HEADER*/
+    /*WELCOME*/
+    /*ABOUT*/
+    /*PROJECTS*/
+    .carousel {
+        border: solid #FFE372 10px;
+
+    }
+    .slides-img {
+        display: grid
+    }
+    /*CONTACT*/
+    .contact-rightside {
+        width:100%;
+    }
 }
 
 
+
 @media (max-width: 576px) {
-    .main-class h3 {
-        font-size: 20px;
-    }
-    .navbar-brand {
-        width: 50%;
-    }
 
-        .navbar-brand p {
-            font-size: 50%;
-        }
-        .navbar-toggler {
-            width: 15%;
-        }
-
-    .navbar-toggler-icon {
-        width: 10%;
-        margin-left: 0;
-    }
-
-    .site-name  {
-        margin-top: 5%;
-       top: 30px;
-    }
-
-    .site-name p {
-        font-size: 35px;
-    }
-    .lead{
-        margin-top: 10%;
-        top: 30px;
-    }
-
-    .about-card p {
-        font-size: 90%;
-    }
-
-    .about-card a {
-        font-size: 12px;
-        width: fit-content;
-    }
-
-    .projects a {
-        width: fit-content;
-    }
-    .contact-form form {
-        border-radius: 15px;
-    }
-
-    .button-send {
-        width: fit-content;
-    }
 }

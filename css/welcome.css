@@ -1,21 +1,16 @@
-﻿.welcome {
-    /*background: url(../img/background-new.jpg) fixed center no-repeat;
-    background-size: cover;*/
-    padding-top: 15%;
-    padding-bottom: 15%;
-    height:100%;
+﻿.welcome-name {
+    text-align: center;
+    font-family: "Semplicita Pro";
+    color: #FC6183;
+   
 }
-.site-name {
-    z-index: 2;
-    width: 100%;
-    position: relative;
+.welcome-secondname {
+    text-align: center;
+    font-family: "Segoe UI";
+    color: #707070;
+    font-weight: lighter;
 }
-    .site-name p {
-        background: #6B0C22;
-        opacity: .9;
-    }
-.lead p {
-    background: #6B0C22;
-    opacity: .9;
+
+.welcome-img {
+    text-align: center;
 }
- 

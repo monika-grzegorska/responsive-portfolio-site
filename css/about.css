@@ -1,18 +1,12 @@
-﻿
-#about {
-    background: url(../img/about-background.jpg) fixed center no-repeat;
-    background-size: cover;
+﻿.about-name {
+    text-align: center;
+    font-family: "Semplicita Pro";
+    color: #FC6183;
 }
-.about-text p {
-    color: #6B0C22;
-}
-
-.about-text a {
-    background: #011e29;
-}
-.about-text a {
-    background: #011e29;
-}
-.about-text img {
-    opacity: .8;
+.about-text {
+    text-align: center;
+    font-family: "Segoe UI";
+    color: #707070;
+    text-transform: uppercase;
+    font-size: 120%;
 }
